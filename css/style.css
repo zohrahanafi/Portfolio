@@ -85,7 +85,7 @@ text-transform: uppercase;
 height: 90vh;
 }
 #hero .content{
-    margin-left: 10px;
+    margin-left: 30px;
 }
 #hero h1{
     font-family: var(--font_title);
@@ -94,7 +94,8 @@ height: 90vh;
     color: var(--color_pink);
 }
 #hero .titles{
-    text-decoration: underline;
+    font-family: var(--font-headings);
+    font-size: 1.3em;
 }
 #hero a{
     width: 20vw;
@@ -294,3 +295,5 @@ html::-webkit-scrollbar-thumb{
     background-color: var(--color_pink);
     border-radius: 10px;
 }
+
+
