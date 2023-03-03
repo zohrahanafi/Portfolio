@@ -129,7 +129,9 @@ background-color: var(--color_grenat_move);
     background-color: var(--color_grenat_move);
 }
 /* about section */
-
+#about{
+    line-height: 2;
+}
 
 #about .experience{
 width: 150px;
@@ -155,6 +157,14 @@ border-top-left-radius: 30px ;
 }
 #about .experience h3{
     font-size: 3em;
+}
+#about .content {
+    padding-left: 2%;
+}
+#about .content span{
+color: var(--color_pink);
+font-family: var(--font_title);
+font-size: 2.5em;
 }
 
 /* skills section */
