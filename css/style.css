@@ -26,23 +26,24 @@ body {
 }
 
 header {
-    padding: 10px;
+    padding: 7px;
     text-align: center;
     text-decoration: none;
     text-transform: capitalize;
     font-family: var(--font-headings);
-    color: var(--color_dark);
+    background-color: var(--color_grenat_move);
 }
-
+header a{
+    color: var(--color_beige) !important;
+}
 header a:hover {
     color: var(--color_pink) !important;
-    text-decoration: underline;
-    transition: .3s;
+    transform: translateY(-3px);
 }
 
 header .navbar-brand {
     font-family: var(--font_title);
-    color: var(--color_pink);
+    color: var(--color_beige);
     font-size: 2em;
 }
 
@@ -54,8 +55,12 @@ header .social_media {
 
 header .social_media a {
     padding: 12px;
-    color: var(--color_dark);
+    color: var(--color_beige);
     font-size: 1.5em;
+}
+header .active {
+    color: var(--color_pink) !important;
+    transform: translateY(-3px);
 }
 
 /* Section Titles */
@@ -127,6 +132,9 @@ header .social_media a {
 
 #hero img{
     margin-right: 30px;
+}
+#hero .about_me{
+    background-color: none !important;
 }
 
 /* goto button */
