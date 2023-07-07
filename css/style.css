@@ -334,19 +334,39 @@ header .active {
 }
 
 #skills .content_div1 {
-    color: var(--color_beige);
     margin: auto;
     font-family: var(--font-headings);
 }
 
-#skills .content_div1 h2 {
+#skills  h2 {
     margin-bottom: 7%;
+    color: var(--color_beige);
+}
+#skills .box{
+    background-color: var(--color_beige);
+    margin: 2px;
+    width: 85px;
+    height: 85px;
+    color: var(--color_dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#skills .box p{
+    transform: rotate(45deg);
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-size: .65rem;
+    font-weight: 600;
 }
 
-#skills .content_div1 p {
-
-    font-size: 0.85em;
+#skills .box i{
+    font-size: 3rem;
+    color: var(--color_pink);
 }
+
 
 #skills button {
     color: var(--color_beige);
@@ -395,6 +415,7 @@ header .active {
     aspect-ratio: calc(3/2) !important;
     object-fit: contain;
 }
+
 
 
 
