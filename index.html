@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <!-- fonts -->
@@ -13,39 +14,43 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat+Alternates&family=Sacramento&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <!-- font awesome -icons- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scss/portfolio.scss">
     <title>Zohra HANAFI</title>
 </head>
 
 <body>
     <header class="sticky-top row">
         <nav>
-            <nav class="navbar navbar-expand-lg ">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand col-sm-3 text-decoration-none" href="#">Zohra hanafi</a>
+                    <a class="navbar-brand col-sm-3 text-decoration-none" href="#">Zh</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse col-sm-9 " id="navbarNavDropdown">
+                    <div class="collapse navbar-collapse col-sm-9" id="navbarNavDropdown">
                         <ul class="navbar-nav me-5">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#hero" >Home</a>
+                                <a class="nav-link active" aria-current="page" href="#hero">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
+                                <a class="nav-link" href="#about_me">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#skills">Skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#resume">Resume</a>
@@ -71,57 +76,90 @@
         <!-- Hero Section -->
         <section class="section" id="hero">
             <div class="row container-fluid">
-                <div class="col-7 content">
-                    <h3 class="mt-5 mb-5">Hello! I'm</h3>
-                    <h1 class="mt-5 mb-5">Zohra hanafi</h1>
-                    <h4 class="mt-5 mb-5"> I am a <span class="titles">graduate student</span></h4>
-                    <a class="btn " href="mailto:zahrahanafi42@gmail.com">Say Hi!</a>
+                <div class="video-container">
+                    <video autoplay loop muted>
+                        <source src="resources//videos/video (1080p).mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay"></div>
                 </div>
-
-                <div class="col-4">
-                    <img src="img/girl plaptop.png" class="img-fluid">
+                <div class="content">
+                    <h3 class="mt-5 mb-5">Hi! <br> Welcome! This is</h3>
+                    <h1 class="mt-5 mb-5">Zohra hanafi</h1>
+                    <h4 class="mt-5 mb-5"> I am a <span class="titles">Software Developer</span></h4>
+                    <!-- <a class="btn" href="mailto:zahrahanafi42@gmail.com">Say Hi!</a> -->
+                    <a class="btn-down" href="#about_me"><i class="fa fa-arrow-down"></i></a>
                 </div>
             </div>
         </section>
-
-        <section id="about">
+        <!-- about section -->
+        <section id="about_me">
             <div class="section_title mt-5">
                 <span class="sub_tit">About</span>
                 <h1 class="title">About me</h1>
             </div>
-            <div class="container row">
-                <div class="col-sm-4 experiences">
-                    <div class="experience">
-                        <h4>Organized</h4>
+            <div class="row container">
+                <div class="col-lg-4 col-md-12 my_profile">
+                    <h3 class="text-center mt-3 mb-2">My profile</h3>
+                    <div class="d-flex justify-content-center">
+                        <img src="resources/girl plaptop.png" class="img-fluid ">
                     </div>
-                    <div class="experience">
-                        <h5 class="text-center">Attention to detail</h5>
-                    </div>
-                    <div class="experience">
-                        <h4>Teamwork</h4>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/girl2 laptop.png" class="img-fluid" alt="laptop girl">
-                </div>
-                <div class="col-sm-4 content">
-                    <h3>Hi, I'm <span>Zohra</span></h3>
-                    <p>Graduate student in Information System Technology, with a keen interest in computer programming
-                        in Java,
-                        Angular, and SQL. Looking to leverage my expertise to build responsive and scalable web
-                        applications that
-                        address practical challenges for organizations.
-                    </p>
-                    <p>I am eager to bring my technical expertise and problem-
-                        solving skills to a company that values innovation and creativity. </p>
 
+                    <table>
+                        <tr>
+                            <td>Name: </td>
+                            <td>Zohra HANAFI</td>
+                        </tr>
+                        <tr>
+                            <td>Degree: &nbsp; </td>
+                            <td>MS, IST & Intilligent computer Systems</td>
+                        </tr>
+                        <tr>
+                            <td>Email: </td>
+                            <td>zohrahanafi42@gmail.com</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-lg-7 col-md-12 profile_content">
+
+                    <div class="content">
+                        <div class="line">
+                            <span class="line-number">1</span>
+                            <span class="line-content">Hello, I am a</span>
+                        </div>
+                        <div class="line">
+                            <span class="line-number">2</span>
+                            <span class="line-content"><span class="imp"> Software Engineer</span> & <span
+                                    class="imp">Web Developer</span></span>
+                        </div>
+                        <div class="line">
+                            <span class="line-number">3</span>
+                            <span class="line-content">Currently studing <span class="imp">Web Design.</span> </span>
+                        </div>
+                        <div class="line">
+                            <span class="line-number">4</span>
+                            <span class="line-content"> I possess a strong foundation in  <span class="imp"> core programming concepts, algorithms, and
+                                object-oriented programming principles</span>.</span>
+                        </div>
+                        <div class="line">
+                            <span class="line-number">5</span>
+                            <span class="line-content">I am also skilled in using various <span class="imp">Spring Boot & Angular</span> to develop web applications and back-end services.</span>
+                        </div>
+                        <div class="line">
+                            <span class="line-number">6</span>
+                            <span class="line-content">Good understanding of database management systems and have
+                                experience working with SQL to write complex queries and  design schemas.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </section>
 
+        
+
         <!-- Got to top button -->
-        <div id="goTop" class="btn btn-lg btn-lg-square">
-            <a href="#hero"><i class="fa-solid fa-arrow-up"></i></a>
+        <div id="goTop">
+            <a href="#hero" class="btn btn-lg btn-lg-square"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
         <!-- skills -->
         <section id="skills">
@@ -129,24 +167,31 @@
                 <span class="sub_tit">Skills</span>
                 <h1 class="title">My Skills</h1>
             </div>
-            <div class="row">
-                <div class="col-sm-5 content_div1">
-                    <h2>My skills.</h2>
-                    <p>
-                        As a graduate with proficiency in programming languages such as Java, Python, C, and SQL, I
-                        possess a strong foundation in core programming concepts, algorithms, and
-                        object-oriented programming principles. I am also skilled in using various frameworks such as
-                        Spring Boot, Angular, and Bootstrap to develop web applications, user interfaces, and back-end
-                        services. In addition, I have a good understanding of database management systems and have
-                        experience working with SQL to write complex queries, design schemas, and optimize database
-                        performance. I am also well-versed in software development methodologies such as Agile,
-                        , and have experience using UML to create software designs and models.
-                        Furthermore, I am adept at using Git for version control and collaboration, and have worked on
-                        multiple school projects, internships, and certifications that showcase my technical skills,
-                        problem-solving abilities, and teamwork capabilities.
-                    </p>
+            <div class="row container">
+                <div class="col-md-5 content_div1">
+                    <h2>Soft Skills</h2>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3 box"><i class="fas fa-comments"></i></div>
+                        <div class="col-lg-3 col-sm-3 box" ><p>Communication</p></div>
+                        <div class="col-lg-3 col-sm-3 box"><p>Problem Solving</p></div>
+                        <div class="col-lg-3 col-sm-3 box"><p>Team Work</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3 box"><p>Creativity</p></div>
+                        <div class="col-lg-3 col-sm-3 box"><p>Responsibility</p></div>
+                        <div class="col-lg-3 col-sm-3 box"><p>Organization</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3 box"><p>Analytical Thinking</p></div>
+                        <div class="col-lg-3 col-sm-3 box"><p>Self Dermined</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3 box"><p>Attention to details</p></div>
+                    </div>
+                    
                 </div>
-                <div class="col-sm-6 skills_content container">
+                <div class="col-md-6 skills_content container">
+                    <h2>Technical Skills</h2>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="programming-tab" data-bs-toggle="tab"
@@ -154,12 +199,12 @@
                                 aria-controls="programming-tab-pane" aria-selected="true">Programming</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="frameworks-tab" data-bs-toggle="tab"
+                            <button class="nav-link active" id="frameworks-tab" data-bs-toggle="tab"
                                 data-bs-target="#frameworks-tab-pane" type="button" role="tab"
                                 aria-controls="frameworks-tab-pane" aria-selected="false">Frameworks</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="others-tab" data-bs-toggle="tab"
+                            <button class="nav-link active" id="others-tab" data-bs-toggle="tab"
                                 data-bs-target="#others-tab-pane" type="button" role="tab"
                                 aria-controls="others-tab-pane" aria-selected="false">Others</button>
                         </li>
@@ -167,152 +212,159 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="programming-tab-pane" role="tabpanel"
                             aria-labelledby="programming-tab" tabindex="0">
-                            <div class="skill">
-                                <div class="row">
-                                    <div class="col"><label>Java</label></div>
-                                    <div class="col number"><label>80%</label></div>
-                                </div>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="row">
-                                    <div class="col"><label>Python</label></div>
-                                    <div class="col number"><label>70%</label></div>
-                                </div>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="row">
-                                    <div class="col"><label>SQL</label></div>
-                                    <div class="col number"><label>80%</label></div>
-                                </div>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="row">
-                                    <div class="col"><label>JavaScript</label></div>
-                                    <div class="col number"><label>70%</label></div>
-                                </div>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                </div>
+                            <div class="skill row">
+                                <img src="https://www.logo.wine/a/logo/Java_(programming_language)/Java_(programming_language)-Logo.wine.svg"
+                                    alt="java" class="col-sm-6">
+                                <img src="https://cdn.worldvectorlogo.com/logos/python-3.svg" alt="python"
+                                    class="col-sm-6">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png"
+                                    alt="C" class="col-sm-6">
+                                <img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="JavaScript">
+                                <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" alt="SQL">
                             </div>
                         </div>
 
 
                         <div class="tab-pane fade" id="frameworks-tab-pane" role="tabpanel"
                             aria-labelledby="frameworks-tab" tabindex="0">
-                            <div class="skill">
-                                <div class="row">
-                                    <div class="col"><label>Spriing Boot</label></div>
-                                    <div class="col number"><label>70%</label></div>
-                                </div>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                </div>
+                            <div class="skill row">
+                                <img src="https://www.openxcell.com/wp-content/uploads/2021/10/springboot-inner.svg"
+                                    alt="Spring Boot" class="col-sm-6">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
+                                    alt="Angular" class="col-sm-6">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png"
+                                    alt="Bootstrap" class="col-sm-6">
                             </div>
-                            <div class="skill">
-                                <div class="row">
-                                    <div class="col"><label>Angular</label></div>
-                                    <div class="col number"><label>80%</label></div>
-                                </div>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="row">
-                                    <div class="col"><label>Bootstrap</label></div>
-                                    <div class="col number"><label>80%</label></div>
-                                </div>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 80%"></div>
-                                </div>
-                            </div>
+
                         </div>
 
 
                         <div class=" tab-pane fade" id="others-tab-pane" role="tabpanel" aria-labelledby="others-tab"
                             tabindex="0">
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="skill">
-                                        <div class="row">
-                                            <div class="col"><label>HTML</label></div>
-                                            <div class="col number"><label>90%</label></div>
-                                        </div>
-                                        <div class="progress" role="progressbar" aria-label="Basic example"
-                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar" style="width: 90%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="skill">
-                                        <div class="row">
-                                            <div class="col"><label>CSS</label></div>
-                                            <div class="col number"><label>82%</label></div>
-                                        </div>
-                                        <div class="progress" role="progressbar" aria-label="Basic example"
-                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar" style="width: 82%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="skill">
-                                        <div class="row">
-                                            <div class="col"><label>UML</label></div>
-                                            <div class="col number"><label>80%</label></div>
-                                        </div>
-                                        <div class="progress" role="progressbar" aria-label="Basic example"
-                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar" style="width: 80%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <div class="skill">
-                                        <div class="row">
-                                            <div class="col"><label>Git</label></div>
-                                            <div class="col number"><label>70%</label></div>
-                                        </div>
-                                        <div class="progress" role="progressbar" aria-label="Basic example"
-                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar" style="width: 70%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="skill">
-                                        <div class="row">
-                                            <div class="col-8"><label>Microsoft Office</label></div>
-                                            <div class="col-4 number"><label>85%</label></div>
-                                        </div>
-                                        <div class="progress" role="progressbar" aria-label="Basic example"
-                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar" style="width: 85%"></div>
-                                        </div>
-                                    </div>
-
-                                </div>
+                            <div class="skill row">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"
+                                    alt="HTML" class="col-sm-6">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
+                                    alt="CSS" class="col-sm-6">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/UML_logo.svg/2560px-UML_logo.svg.png"
+                                    alt="UML" class="col-sm-6">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/2560px-Git-logo.svg.png"
+                                    alt="Git" class="col-sm-6">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Microsoft_Office_2013-2019_logo_and_wordmark.svg/2560px-Microsoft_Office_2013-2019_logo_and_wordmark.svg.png"
+                                    alt="Microsoft Office" class="col-sm-6">
+                                <img src="https://seeklogo.com/images/U/ubuntu-logo-8B7C9ED4AD-seeklogo.com.png"
+                                    alt="Linux" class="col-sm-6">
                             </div>
-
 
                         </div>
 
                     </div>
+
                 </div>
             </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <section id="portfolio" class="container">
+            <div class="section_title mt-5 mb-5">
+                <span class="sub_tit">Portfolio</span>
+                <h1 class="title">My Portfolio</h1>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <!-- project 1 -->
+                        <div class="card">
+                            <div id="project1" class="card-header"></div>
+                            <div class="card-bottom">
+                                <div class="read-more">
+                                    <p>Farm Business Landing page</p>
+                                    <i class="fas fa-caret-up clignot"></i>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-body-box">
+                                        <h3 class="card-body-title">Farm Business Landing page</h3>
+                                        <p class="card-body-description">This a a landing page for a Farm in Arabic,
+                                            made
+                                            with HTML, CSS, JS, & Bootstrap</p>
+                                        <p class="card-body-keys"><i class="fas fa-tag"></i> HTML, CSS, JS, Bootstrap
+                                        </p>
+                                        <div class="card-body-action">
+                                            <a class="btn btn-border"
+                                                href="https://github.com/zohrahanafi/Single-HTML-pages/tree/main/Landing%20pages/Falm%20Albani%20Arabic%20Website"
+                                                target="_blank"><i class="fas fa-code"></i>Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <!-- project 2 -->
+                        <div class="card">
+                            <div id="project2" class="card-header"></div>
+                            <div class="card-bottom">
+                                <div class="read-more">
+                                    <p>Flowers Shop Landing page</p>
+                                    <i class="fas fa-caret-up clignot"></i>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-body-box">
+                                        <h3 class="card-body-title">Flowers Shop Landing page</h3>
+                                        <p class="card-body-description">This a a landing page for a Flowers Shop, made
+                                            with pure HTML, CSS, and JS</p>
+                                        <p class="card-body-keys"><i class="fas fa-tag"></i> HTML, CSS, JS</p>
+                                        <div class="card-body-action">
+                                            <a class="btn btn-border"
+                                                href="https://github.com/zohrahanafi/Single-HTML-pages/tree/main/Landing%20pages/Flowers%20Shop"
+                                                target="_blank"><i class="fas fa-code"></i>Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <!-- project 3 -->
+                        <div class="card">
+                            <div id="project3" class="card-header"></div>
+                            <div class="card-bottom">
+                                <div class="read-more">
+                                    <p>Travel Webiste</p>
+                                    <i class="fas fa-caret-up clignot"></i>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-body-box">
+                                        <h3 class="card-body-title">Travel Website</h3>
+                                        <p class="card-body-description">This a travel Club website, made using PHP that
+                                            contains four pages. <br> The website connects to the "MySQL" database to
+                                            create and displays users.</p>
+                                        <p class="card-body-keys"><i class="fas fa-tag"></i>PHP, HTML, CSS, MySql</p>
+                                        <div class="card-body-action">
+                                            <a class="btn btn-border"
+                                                href="https://github.com/zohrahanafi/Single-HTML-pages/tree/main/Landing%20pages/Falm%20Albani%20Arabic%20Website"
+                                                target="_blank"><i class="fas fa-code"></i>Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
         </section>
 
         <!-- Resume -->
@@ -453,40 +505,40 @@
             <div class="row slider">
                 <div class="slide-track">
                     <div class="slide">
-                        <img src="img/certeficates/img 1.png" alt="Certeficates">
+                        <img src="resources/certeficates/img 1.png" alt="Certeficates">
                     </div>
                     <div class="slide">
-                        <img src="img/certeficates/img2.png" alt="Certeficates">
+                        <img src="resources/certeficates/img2.png" alt="Certeficates">
                     </div>
                     <div class="slide">
-                        <img src="img/certeficates/img3.png" alt="Certeficates">
+                        <img src="resources/certeficates/img3.png" alt="Certeficates">
                     </div>
                     <div class="slide">
-                        <img src="img/certeficates/img4.png" alt="Certeficates">
+                        <img src="resources/certeficates/img4.png" alt="Certeficates">
                     </div>
                     <div class="slide">
-                        <img src="img/certeficates/img5.png" alt="Certeficates">
+                        <img src="resources/certeficates/img5.png" alt="Certeficates">
                     </div>
                     <div class="slide">
-                        <img src="img/certeficates/img6.png" alt="Certeficates">
+                        <img src="resources/certeficates/img6.png" alt="Certeficates">
                     </div>
                     <div class="slide">
-                        <img src="img/certeficates/img7.png" alt="Certeficates">
+                        <img src="resources/certeficates/img7.png" alt="Certeficates">
                     </div>
                     <div class="slide">
-                        <img src="img/certeficates/img8.png" alt="Certeficates">
+                        <img src="resources/certeficates/img8.png" alt="Certeficates">
                     </div>
                     <div class="slide">
-                        <img src="img/certeficates/img9.png" alt="Certeficates">
+                        <img src="resources/certeficates/img9.png" alt="Certeficates">
                     </div>
                     <div class="slide">
-                        <img src="img/certeficates/img10.png" alt="Certeficates">
+                        <img src="resources/certeficates/img10.png" alt="Certeficates">
                     </div>
                     <div class="slide">
-                        <img src="img/certeficates/img11.png " alt="Certeficates">
+                        <img src="resources/certeficates/img11.png " alt="Certeficates">
                     </div>
                     <div class="slide">
-                        <img src="img/certeficates/img12.png" alt="Certeficates">
+                        <img src="resources/certeficates/img12.png" alt="Certeficates">
                     </div>
                 </div>
 
@@ -500,26 +552,14 @@
                 <span class="sub_tit">Contact</span>
                 <h1 class="title">Contact me</h1>
             </div>
-            <div class="row">
-                <div class="col-sm-6 direct_contact">
-                    <p>Please fill out the form on this section to contact me or send me an email</p>
+            <div class="content text-center">
+                <p>Please use the following email to contact me:</p>
                     <div class="email row">
-                        <div class="col-2"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="col-10">
-                            <h6>Email</h6>
+                        <div class="col-12">
+                            <h6><i class="fa-solid fa-envelope"></i> Email</h6>
                             <h4>zahrahanafi42@gmail.com</h4>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 form_contact">
-                    <form>
-                        <input type="text" placeholder="Your name" class="form-control" name="name" required>
-                        <input type="email" placeholder="Your email" class="form-control" name="email" required>
-                        <input type="phone" placeholder="Your phone" class="form-control" name="phone">
-                        <textarea placeholder="Your message here" name="message"></textarea>
-                        <button class="btn" type="submit">Send message!</button>
-                    </form>
-                </div>
             </div>
         </section>
 
@@ -528,13 +568,62 @@
 
 
     <footer class="mt-5">
-        <div class="row">
-            <h4 class="mt-2">Connect</h4>
-            <div class="icons">
-                <a href="https://github.com/zohrahanafi" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/zohra-hanafi/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/zohrahanafi" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+       
+        <div class="row container">
+            <div class="col-lg-4 col-md-6">
+                <h1 class="logo">Zohra Hanafi</h1>
+                <p>I am Zohra, a Software Engineer and Web Developer</p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-widget">
+                    <div class="footer-widget-heading">
+                        <h2>Useful Links</h2>
+                    </div>
+                    <ul class="footer-widget-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about_me">About me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Conatct</a></li>
+                        <li><a href="#certeficates">Certeficates</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-widget">
+                    <div class="footer-widget-heading">
+                        <h2>Keep in touch</h2>
+                    </div>
+                    <div class="contact-social">
+                        <ul>
+                            <li><a class="hover-target" href="https://www.linkedin.com/in/zohra-hanafi/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a class="hover-target" href="https://www.facebook.com/zahra.hnf19/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="hover-target" href="https://www.instagram.com/bloomeflycode/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+
+                        </ul>
+                        <ul>
+                            <li><a class="hover-target" href="https://medium.com/@zahrahnf07" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+                            <li><a class="hover-target" href="https://github.com/zohrahanafi" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a class="hover-target" href="https://stackoverflow.com/users/11663385/zahrahnf" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
+                            <li><a class="hover-target" href="https://codepen.io/zahrahnf" target="_blank"><i class="fab fa-codepen"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    
+                        <div class="copyright-text text-center">
+                            <p>Copyright &copy; 2023. <br>Zohra HANAFI, All Right Reserved.</p>
+                        </div>
+            
+                </div>
             </div>
         </div>
     </footer>

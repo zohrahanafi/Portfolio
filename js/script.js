@@ -6,7 +6,7 @@ const sections = document.querySelectorAll("section");
 
 // to use the animation javascript library
 var options = {
-  strings: ['Graduate student', 'Software Developer', 'Web Developer'],
+  strings: ['Software Developer', 'Web Developer'],
   typeSpeed: 100,
   backSpeed: 100,
   loop: true
@@ -25,3 +25,4 @@ function activeMenu() {
 
 activeMenu();
 window.addEventListener("scroll", activeMenu);
+
