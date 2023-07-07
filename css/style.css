@@ -548,15 +548,15 @@ header .active {
 
 #portfolio #project1 {
     /* background-color: #000; */
-    background-image: url('/resources/portfolio/Albani landing page.jpeg');
+    background-image: url('/resources/portfolio/Albani%20landing%20page.jpeg?raw=true');
 }
 #portfolio #project2 {
     /* background-color: #000; */
-    background-image: url('/resources/portfolio/flowers shop website.jpeg');
+    background-image: url('/resources/portfolio/flowers%20shop%20website.jpeg?raw=true');
 }
 #portfolio #project3 {
     /* background-color: #000; */
-    background-image: url('/resources/portfolio/travel website.jpeg');
+    background-image: url('/resources/portfolio/travel%20website.jpeg?raw=true');
 }
 
 /* resume */
